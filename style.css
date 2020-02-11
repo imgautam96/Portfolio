@@ -243,15 +243,33 @@ body{
     left: 10%;
 }
 
-.avatar-img{
+.main-avatar-img{
     height: 100vh;
-    /* position:fixed;
-    left:50%; */
+    position:fixed;
+    left:55%;
+    z-index: -21;
     animation: slideleft 1.5s ease 1;
     animation-delay: 1s;
     animation-fill-mode: backwards;
 }
-.avatar-img img{
+
+.about-avatar-img{
+    height: 100vh;
+    /* position: relative; */
+    /* left:10%; */
+    /* top: -10%; */
+    /* z-index: -21; */
+    animation: slideleft 1.5s ease 1;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+}
+.main-avatar-img img{
+    height: 100%;
+    position: relative;
+    right: -31%;
+    /* background-color: red; */
+}
+.about-avatar-img img{
     height: 100%;
     position: relative;
     right: -31%;
@@ -346,6 +364,7 @@ body{
 .contact-container{
     height: 100vh;
     background-color: rgb(217, 217, 217);
+    z-index: 20;
     display: flex;
     justify-content: space-around;
 }
