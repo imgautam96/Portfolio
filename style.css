@@ -1,0 +1,532 @@
+/* EMBEDDING FONTS LOCALLY */
+
+
+@font-face {
+    font-family: 'arconregular';
+    src: url('lib/fonts/arcon-regular-webfont.woff2') format('woff2'),
+         url('lib/fonts/arcon-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nunitoblack';
+    src: url('lib/fonts/nunito-black-webfont.woff2') format('woff2'),
+         url('lib/fonts/nunito-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nunitobold';
+    src: url('lib/fonts/nunito-bold-webfont.woff2') format('woff2'),
+         url('lib/fonts/nunito-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'nunitoextrabold';
+    src: url('lib/fonts/nunito-extrabold-webfont.woff2') format('woff2'),
+         url('lib/fonts/nunito-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nunitoextralight';
+    src: url('lib/fonts/nunito-extralight-webfont.woff2') format('woff2'),
+         url('lib/fonts/nunito-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nunitolight';
+    src: url('lib/fonts/nunito-light-webfont.woff2') format('woff2'),
+         url('lib/fonts/nunito-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nunitoregular';
+    src: url('lib/fonts/nunito-regular-webfont.woff2') format('woff2'),
+         url('lib/fonts/nunito-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nunitosemibold';
+    src: url('lib/fonts/nunito-semibold-webfont.woff2') format('woff2'),
+         url('lib/fonts/nunito-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/* HEADER   STARTS  HERE*/
+
+
+header{
+    width:100vw;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    /* background-color:red; */
+    height:65px;
+    /* backdrop-filter: blur(10px); */
+    /* box-shadow: 2px 10px 17px 0px rgba(0,0,0,0.26); */
+    animation: slidedown 2s ease-in-out 1;
+    /* animation-delay: 1s; */
+    animation-fill-mode: forwards;
+
+
+}
+
+.logo{
+    display: block;
+    position: relative;
+   top:65%;
+   left:5%;
+    width: 5%;
+    /* background-color: white; */
+}
+
+header ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+header ul li{
+    text-decoration: none;
+    list-style: none;
+    margin: -10px 55px 25px 10px;
+    font-size: 20px;
+    color:rgb(65, 64, 58);
+    /* text-shadow: 1px 4px 2px rgba(0,0,0,0.45); */
+    /* text-shadow: 1px 4px 4px #7A797A; */
+    cursor:pointer;
+}
+
+header ul li:nth-child(3){
+    margin-right: 150px;
+}
+
+header ul li:hover{
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+/* HEADER ENDS HERE */
+
+/* LOADER  STARTS HERE*/
+/* #loader{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    overflow: visible;
+    background: white url('lib/editor-1s-45px.gif') no-repeat center center;
+} */
+/* LOADER ENDS HERE */
+
+/* BODY STARTS HERE */
+body{
+    margin: 0;
+    overflow-x: hidden;
+    padding:0;
+    background-color: rgb(242, 231, 75);
+    font-family: 'nunitobold';
+    letter-spacing: 0.5px;
+}
+.main-container{
+    display: flex;
+}
+
+.about-container{
+    display: flex;
+    background-color: rgb(217, 217, 217);
+}
+
+.avatar-info{
+    clip-path: polygon(67% 0, 100% 48%, 66% 100%, 0 100%, 0 0);
+    animation: slideright 2s ease 1;
+    background-color: #D8E8F2;
+    height: 100vh;
+    width: 53%;
+}
+
+.about-avatar-info{
+    clip-path: polygon(67% 0, 100% 48%, 66% 100%, 0 100%, 0 0);
+    background-color: rgb(27, 48, 89);
+    /* background-color: rgb(216, 232, 242); */
+    height: 100vh;
+    width: 53%;
+}
+
+.avatar-details{
+    /* background-color: red; */
+    height: 200px;
+    width: 400px;
+    position: relative;
+    top:40%;
+    left: 10%;
+    /* font-size: 20px; */
+    /* margin: auto; */
+    /* left: 24%; */
+    font-family: 'arconregular';
+    font-weight: 100;
+    color: rgb(27, 48, 89);
+    /* z-index: 4; */
+}
+
+.avatar-details h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+.avatar-details h3{
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.about-avatar-details{
+    /* background-color: red; */
+    height: 200px;
+    width: 400px;
+    position: relative;
+    top:40%;
+    left: 10%;
+    /* font-size: 20px; */
+    /* margin: auto; */
+    /* left: 24%; */
+    font-family: 'arconregular';
+    font-weight: 300;
+    color: white;
+    /* color: rgb(27, 48, 89); */
+    /* z-index: 4; */
+}
+
+.about-avatar-details h1{
+    font-size: 50px;
+    position: relative;
+    top: -50%;
+    left: 10%;
+}
+
+.about-avatar-details h4{
+    font-weight: 100;
+    letter-spacing: 1px;
+    position: relative;
+    top: -40%;
+    left: 10%;
+}
+
+.avatar-img{
+    height: 100vh;
+    /* position:fixed;
+    left:50%; */
+    animation: slideleft 1.5s ease 1;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+}
+.avatar-img img{
+    height: 100%;
+    position: relative;
+    right: -31%;
+    /* background-color: red; */
+}
+
+.careers{
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0,0,0,0.1    );
+    padding-top: 5%;
+}
+
+.video-edit,.graphic-design,.uiux-design{
+    text-align:center;
+    margin: auto;
+    font-family: 'arconregular';
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.video-edit{
+    position: relative;
+    font-size: 25px;
+    width: 331px;
+    height: 218px;
+    line-height: 13;
+    background-image: url('lib/img/videoedit.png');
+    background-size: cover;
+    clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+}
+
+
+.graphic-design{
+    margin-top: 3%;
+    background-image: url('lib/img/graphic.png');
+    font-size: 35px;
+    height: 187px;
+    line-height: 5;
+    width: 682px;
+    clip-path: polygon(23% 0, 77% 0, 97% 100%, 3% 99%);
+}
+
+
+.uiux-design{
+    margin-top: 3%;
+    margin-bottom: 5%;
+    background-image: url('lib/img/uiux.png');
+    font-size: 45px;
+    height: 142px;
+    line-height: 3;
+    width: 976px;
+    clip-path: polygon(15% 0, 85% 0, 96% 100%, 0 130%);
+}
+
+
+.portfolio-container{
+    height: 100vh;
+    background-color: rgb(217, 217, 217);
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+    top: 15%;
+}
+
+.card-container .card{
+    margin-top: 20px;
+    background-image: url('lib/img/Rectangle\ 10.png');
+    background-size: cover;
+    border-radius: 30px;
+    height: 250px;
+    color: white;
+    width: 400px;
+    justify-content: center;
+}
+
+.card-container .card p{
+    text-align: center;
+    /* line-height: 15; */
+    font-size: 25px;
+    font-family: 'arconregular';
+    font-weight: 100;
+    position: relative;
+    top: 75%;
+    font-weight: 100;
+}
+
+.contact-container{
+    height: 100vh;
+    background-color: rgb(217, 217, 217);
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-text,.contact-form{
+    position: relative;
+    top: 24%;
+}
+
+.contact-text{
+    /* background-color: blue; */
+    height: 500px;
+    width: 30%;
+    color:rgb(27, 48, 89);
+
+}
+
+.contact-text h1{
+    font-size: 45px;
+    font-family: 'nunitoextrabold';
+
+}
+
+.contact-text h3{
+    font-size: 23px;
+    position: relative;
+    top: 5%;
+    line-height: 1.5;
+    font-family: 'nunitoextralight';
+    letter-spacing: 1px;
+    /* font-weight: 100; */
+}
+
+.contact-form{
+    /* background-color: orange; */
+    height: 500px;
+    color: black;
+    width: 30%;
+}
+.contact-form input{
+    background-color: transparent;
+    border:1px solid black;
+    width: 350px;
+    height: 40px;
+}
+.contact-form label p{
+    margin-bottom: 2%;
+}
+
+.contact-form form{
+    margin-left:25%;
+    width: 80%;
+    /* background-color: red; */
+}
+.contact-form label{
+    font-family: 'nunitoextralight';
+    font-weight: 100;
+}
+
+.contact-form ::placeholder{
+    font-family: 'nunitoextralight';
+    color: grey;
+    position: relative;
+    left: 4%;
+}
+
+.contact-email{
+    margin-top: 5%;
+}
+
+.contact-msg{
+    margin-top: 5%;
+}
+.contact-form button{
+    position: relative;
+    font-family: 'nunitoextralight';
+    top: 20px;
+    left: 50%;
+    height: 46px;
+    width: 168px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.underline{
+    border-bottom: 1px solid black;
+}
+
+
+/* BODY ENDS HERE */
+
+
+/* ANIMATION KEYFRAMES */
+@keyframes fade{
+    0%{
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes slideright{
+    0%{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes slideleft{
+    0%{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slidedown{
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes zoom{
+  0%{
+    transform: scale(1);
+   
+  }
+  50%{
+    transform: scale(1.05);
+   
+
+  }
+  100%{
+    transform: scale(1);
+   
+    
+  }
+}
+
+@keyframes appear{
+    0%{
+        backdrop-filter: blur(5px);
+    }
+    100%{
+        backdrop-filter: blur(0px);
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+/* ANIMATION KEYFRAMES ENDS HERE */
