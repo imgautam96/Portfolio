@@ -1,0 +1,20 @@
+Homepage:
+
+*font weight of abhishek gautam and below text still not creating enough contrast (try adjusting font weight by +2 ~ -2 in both texts).
+*fix the bottom left corner of illustration (it should not reveal its bottom left corner).
+
+
+TRIANGLE:
+
+*change the color of text with this  #AFC9FD.
+*make images darker by adding a black mask or tint and reduce its transparency to make text readable and still able to see the image in bg.
+
+
+Contact page section:
+
+*keep the homepage bg static and let the contact section come over it when we scroll.
+
+
+Other:
+
+keep portfolio and about section of separate page as displayed in the XD.
