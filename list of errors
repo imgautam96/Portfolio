@@ -1,20 +1,23 @@
 Homepage:
 
-*font weight of abhishek gautam and below text still not creating enough contrast (try adjusting font weight by +2 ~ -2 in both texts).
-*fix the bottom left corner of illustration (it should not reveal its bottom left corner).
+*font weight of abhishek gautam and below text still not creating enough contrast (try adjusting font weight by +2 ~ -2 in both texts). -------->>>>>>DONE BUT CANNOT INCREASE BY +2 OR -2.
+
+*fix the bottom left corner of illustration (it should not reveal its bottom left corner).------------->>>>DONE
 
 
 TRIANGLE:
 
-*change the color of text with this  #AFC9FD.
-*make images darker by adding a black mask or tint and reduce its transparency to make text readable and still able to see the image in bg.
+*change the color of text with this  #AFC9FD.------------->>>>DONE
+*make images darker by adding a black mask or tint and reduce its transparency to make text readable and still able to see the image in bg.------------->>>>DONE
 
 
 Contact page section:
 
 *keep the homepage bg static and let the contact section come over it when we scroll.
+------------------>>>>>>>>>>>>THE FORM BACKGROND AND THE IMG BACKGROUND ABOTH HAVING A DARK COLOR MAKING IT LOOK LIKE ITS BAD CONTENT.
 
 
 Other:
 
 keep portfolio and about section of separate page as displayed in the XD.
+------->>>>>THEY ARE ACTUALLY SEPERATE BUT HAVING THE SAME BACKGROUND COLOR MAKES IT LOOK LIKE A SINGLE PAGE.

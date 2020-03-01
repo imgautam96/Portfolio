@@ -203,8 +203,9 @@ body{
 }
 
 .avatar-details h1{
+    font-family: 'arconregular';
     font-size: 50px;
-    font-weight: 500;
+    font-weight: 600;
 }
 .avatar-details h3{
     font-size: 28px;
@@ -244,7 +245,7 @@ body{
 }
 
 .main-avatar-img{
-    height: 100vh;
+    height: 101vh;
     position:fixed;
     left:55%;
     z-index: -21;
@@ -296,6 +297,7 @@ body{
     font-size: 25px;
     width: 331px;
     height: 218px;
+    color:#AFC9FD;
     line-height: 13;
     background-image: url('lib/img/videoedit.png');
     background-size: cover;
@@ -307,6 +309,7 @@ body{
     margin-top: 3%;
     background-image: url('lib/img/graphic.png');
     font-size: 35px;
+    color:#AFC9FD;
     height: 187px;
     line-height: 5;
     width: 682px;
@@ -320,6 +323,7 @@ body{
     background-image: url('lib/img/uiux.png');
     font-size: 45px;
     height: 142px;
+    color:#AFC9FD;
     line-height: 3;
     width: 976px;
     clip-path: polygon(15% 0, 85% 0, 96% 100%, 0 130%);
